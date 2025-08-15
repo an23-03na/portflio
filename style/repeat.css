@@ -1,0 +1,15 @@
+.container {
+    max-width: 945px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.text {
+    margin: 0;
+    font-weight: 400;
+    font-size: clamp(0.625rem, 0.4821rem + 0.7143vw, 1.125rem);
+    color: var(--dark-color);
+}
+.title {
+  margin: 0;
+  font-size: clamp(1.25rem, 1rem + 1.25vw, 2.125rem);
+}

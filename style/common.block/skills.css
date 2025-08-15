@@ -1,0 +1,29 @@
+.skills {
+  margin-bottom: 80px;
+}
+.skills__container {
+  text-align: center;
+}
+.skills__title {
+  padding: 50px 0;
+}
+.skills__text {
+  padding-bottom: 80px;
+}
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.skills__list-item {
+}
+.skills__item-img {
+}
+.skilss__item-title {
+  padding: 0 60px;
+  margin-bottom: 30px;
+  color: #828282;
+  font-size: 16px;
+}
+.skilss__item-title-figma {
+  margin-bottom: 50px;
+}
