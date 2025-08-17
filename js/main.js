@@ -1,4 +1,4 @@
-const button = document.querySelector(".nav__button")
+const button = document.querySelector(".burger")
 const nav = document.querySelector(".nav")
 const dialogButton = document.querySelector(".contacts__button")
 const dialog = document.querySelector(".dialog")
@@ -13,5 +13,14 @@ dialogClose.onclick = () => {
 }
 
 button.onclick = () => {
+    document.body.classList.toggle("scroll-lock")
+    button.classList.toggle("burger_active")
     nav.classList.toggle("nav_active")
+}
+nav.onclick = (e) => {
+    if (e.target.closest(".nav__link")) {
+        document.body.classList.remove("scroll-lock")
+        button.classList.remove("burger_active")
+        nav.classList.remove("nav_active")
+    }
 }
