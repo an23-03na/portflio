@@ -1,0 +1,15 @@
+.about {
+  padding-bottom: 50px;
+  background-color: #F6F6F6;
+}
+.about__container {
+  text-align: center;
+}
+.about__title {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  
+}
+.about__text {
+  padding-bottom: 30px;
+}

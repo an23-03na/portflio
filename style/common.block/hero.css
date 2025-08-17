@@ -1,0 +1,44 @@
+.hero {
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+.hero__container {
+}
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 30px 0;
+}
+.hero__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero__title {
+  font-size: 47px;
+  margin: 0;
+}
+.hero__text {
+  align-self: end;
+}
+.hero__lang-box {
+  display: none;
+}
+.hero__lang-button {
+}
+.lang-button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  padding: 0;
+}
+.lang-button:hover {
+  color: blue;
+}
+.lang__button_ru {
+  color: #828282;
+}
+.hero__img {
+  width: 100%;
+}
