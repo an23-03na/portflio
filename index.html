@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/media.css">
@@ -33,33 +37,43 @@
                         <a class="nav__link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
+                <div class="lang nav__lang-box">
+                    <button class="lang-button lang__button_ru">RU</button>
+                    |
+                    <button class="lang-button lang__button_eng">ENG</button>
+                </div>
             </nav>
             <hr>
-            <div class="nav__box container">
-                <button class="nav__button button-reset">
-                    <svg class="nav__button-icon">
-                        <use xlink:href="./svg/_sprite.svg#menu" />
-                    </svg>
-                </button>
-            </div>
+
         </div>
     </header>
     <main class="main">
         <section id="home" class="hero">
             <div class="hero__container container">
+
                 <div class="hero__content">
-                    <h2 class="hero__title">
-                        Denis <br> Novik</h2>
-                    <p class="hero__text">
-                        UX | UI designer <br>
-                        24 years old, Minsk
-                    </p>
-                    </button>
-                    <div class="hero__lang-box">
-                        <button class="hero__lang-button button__ru">RU</button>
-                        |
-                        <button class="hero__lang-button">ENG</button>
+                    <div class="hero__content-box">
+                        <h2 class="hero__title">
+                            Denis <br> Novik</h2>
+                        <p class="hero__text">
+                            UX | UI designer <br>
+                            24 years old, Minsk
+                        </p>
+
+                        <div class="lang hero__lang-box">
+                            <button class="lang-button lang__button_ru">RU</button>
+                            |
+                            <button class="lang-button lang__button_eng">ENG</button>
+                        </div>
                     </div>
+
+
+                    <button class="hero__button button-reset burger">
+                        <span class="burger__line burger__line_first"></span>
+                        <span class="burger__line burger__line_middle"></span>
+                        <span class="burger__line burger__line_bottom"></span>
+                    </button>
+
                 </div>
                 <picture>
                     <source media="(min-width:768px )" srcset="./img/desktop.jpg">
@@ -242,13 +256,19 @@
     </main>
     <dialog class="dialog">
         <button class="dialog__close">X</button>
-        <form class="dialog__form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="dialog__form">
+            <input type="hidden" name="access_key" value="dfa3965f-f400-41ae-aea3-bbfbdcbd94d2">
             <input class="dialog__input" name="Name" type="text" placeholder="Name">
             <input class="dialog__input" name="Email" type="email" placeholder="Email">
             <input class="dialog__input" name="Phone" type="tel" placeholder="Phone">
             <textarea class="dialog__textarea" name="Message" placeholder="Message"></textarea>
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <!-- Custom Confirmation / Success Page -->
+            <input type="hidden" name="redirect" value="http://127.0.0.1:5501/">
             <button class="">Submit</button>
         </form>
+
     </dialog>
 </body>
 <script src="./js/main.js"></script>
